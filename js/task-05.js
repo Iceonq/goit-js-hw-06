@@ -5,7 +5,7 @@ nameInput.addEventListener("input", updateValue);
 
 function updateValue(e) {
   if (e.currentTarget.value) {
-    nameOutput.textContent = e.currentTarget.value;
+    nameOutput.textContent = e.currentTarget.value.trim();
   } else {
     nameOutput.textContent = "Anonymous";
   }
